@@ -21,7 +21,7 @@ func _on_Area2D_body_entered(body):
 		body.damage(damage)
 		Effects = get_node_or_null("res://Effects/")
 		if Effects != null:
-			var explosion = Explosion.instance()
+			var  explosion = Explosion.instance()
 			Effects.add_child(explosion)
 			explosion.global_position = global_position
 		queue_free()
